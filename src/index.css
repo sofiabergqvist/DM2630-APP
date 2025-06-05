@@ -28,3 +28,66 @@ h2 {
 .info-text {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Button styling */
+.start-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.start-buttons button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: none;
+  background: #FC6A00;
+  color: white;
+  font-size: 1em;
+}
+
+.start-buttons button:hover {
+  background: #FC8834;
+}
+
+.post-buttons {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+}
+
+.post-buttons button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: none;
+  background: #FC6A00;
+  color: white;
+  font-size: 0.75em;
+}
+
+.post-buttons button:hover {
+  background: #FC8834;
+}
+
+/* Card container styling */
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Input containter styling */
+.input-container {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  background: pink;
+}
+
+.input-container input {
+  border-radius: 5px;
+  cursor: text;
+  border-color: gray;
+}
