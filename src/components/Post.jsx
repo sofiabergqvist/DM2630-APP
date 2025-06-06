@@ -1,5 +1,6 @@
 import '../index.css'
 import post1 from '../assets/POST 1.png'
+import Timer from './Timer.jsx'
 
 function Post () {
 
@@ -14,9 +15,12 @@ function Post () {
                 <img src={post1} alt='POST 1'/>
             </div>
             <div className='input-container'>
+                <div className='timer-container'> 
+                    <Timer />
+                </div>
                 <input />
             </div>
-            <div className='post-buttons'>
+            <div className='post-button-container'>
                 <button>POST</button>
             </div>
         </div>     

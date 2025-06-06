@@ -8,7 +8,5 @@ import Post from './components/Post.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <Post />
-    <Timer />
   </StrictMode>,
 )

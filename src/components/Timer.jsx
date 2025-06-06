@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
 
 function Timer() {
 
@@ -25,7 +25,7 @@ function Timer() {
 
     return (
         <div>
-            This is the timer: {formatTime(timeLeft)}
+            {formatTime(timeLeft)}
         </div>
     )
 
