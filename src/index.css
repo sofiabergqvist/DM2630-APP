@@ -27,6 +27,7 @@ h2 {
 /* Paragraph styling */
 .info-text {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 1em;
 }
 
 /* Button styling */

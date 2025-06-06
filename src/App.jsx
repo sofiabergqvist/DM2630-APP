@@ -8,7 +8,8 @@ function App() {
   return (
     <div className='app-container'>
       <h1>Welcome to Alternate Realities</h1>
-      <p className='info-text'>Information about the game goes here.</p>   
+      <p className='info-text'>Information about the game goes here.</p> 
+      <hr />  
         <h2>
           Post {current_post}
         </h2>
