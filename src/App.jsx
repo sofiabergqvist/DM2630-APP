@@ -1,27 +1,26 @@
 import './index.css'
-import './components/Card'
-import { useState } from 'react'
+import post1 from './assets/POST 1.png'
 
 function App() {
 
-  const [isGameStarted, setIsGameStarted] = useState(false);
-
-  function beginGame() {
-    console.log("Button was clicked!");
-    setIsGameStarted(true);
-  }
-
-  if(isGameStarted) {
-    return <Card />
-  }
+  const current_post = 1;
 
   return (
     <div className='app-container'>
       <h1>Welcome to Alternate Realities</h1>
-      <p className='info-text'>Information about the game goes here.</p>
-      <div className='start-buttons'>
-          <button  onClick={beginGame}>Ready to begin?</button>
-      </div>     
+      <p className='info-text'>Information about the game goes here.</p>   
+        <h2>
+          Post {current_post}
+        </h2>
+        <div className='card-container'>
+            <img src={post1} alt='POST 1'/>
+        </div>
+        <div className='input-container'>
+            <input />
+        </div>
+        <div className='post-buttons'>
+            <button>POST</button>
+        </div>
     </div>
   )
 }

@@ -30,27 +30,6 @@ h2 {
 }
 
 /* Button styling */
-.start-buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.start-buttons button {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  cursor: pointer;
-  border-radius: 8px;
-  padding: 10px 15px;
-  border: none;
-  background: #FC6A00;
-  color: white;
-  font-size: 1em;
-}
-
-.start-buttons button:hover {
-  background: #FC8834;
-}
-
 .post-buttons {
   display: flex;
   justify-content: right;
