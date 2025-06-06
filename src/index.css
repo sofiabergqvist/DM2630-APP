@@ -83,7 +83,7 @@ h2 {
 .input-container {
   padding-top: 10px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: right;
 }
 
 .input-container input {
@@ -95,5 +95,11 @@ h2 {
 /* Timer styling */
 .timer-container {
   font-size: xx-large;
-  background: pink;
+  width: 2em;
+}
+
+.timer-and-input{
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-evenly;
 }

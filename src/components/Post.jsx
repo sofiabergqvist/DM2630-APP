@@ -14,12 +14,15 @@ function Post () {
             <div className='card-container'>
                 <img src={post1} alt='POST 1'/>
             </div>
-            <div className='input-container'>
+            <div className='timer-and-input'>
                 <div className='timer-container'> 
                     <Timer />
                 </div>
-                <input />
+                <div className='input-container'>
+                    <input />
+                </div>
             </div>
+            
             <div className='post-button-container'>
                 <button>POST</button>
             </div>
