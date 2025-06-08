@@ -69,8 +69,8 @@ h2 {
   font-size: 0.75em;
 }
 
-.post-button-container button:hover {
-  background: #FC8834;
+.post-button-container button:disabled {
+  background: #f3b58a;
 }
 
 /* Card container styling */
@@ -86,10 +86,11 @@ h2 {
   justify-content: right;
 }
 
-.input-container input {
+.input-container textarea {
   border-radius: 5px;
   cursor: text;
   border-color: gray;
+  resize: none;
 }
 
 /* Timer styling */

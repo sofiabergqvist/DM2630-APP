@@ -31,10 +31,6 @@ function Post () {
                     />
                 </div>
             </div>
-            
-            <div className='post-button-container'>
-                <button>POST</button>
-            </div>
         </div>     
     )
 
