@@ -1,9 +1,7 @@
-import { useState, useEffect } from "react"
+import { useEffect } from "react"
 
-function Timer() {
+function Timer({timeLeft, setTimeLeft}) {
 
-    const [timeLeft, setTimeLeft] = useState(60); // start at 60 sec
-    const [countDownStarted, setCountDownStarted] = useState(false) 
 
     useEffect(() => {
     if (timeLeft === 0) return;
