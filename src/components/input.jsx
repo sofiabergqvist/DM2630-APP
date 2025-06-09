@@ -3,16 +3,23 @@ import { useState } from 'react'
 
 function Input ({timeLeft}) {
 
-    const [text, setText] = useState("");       // textarea value
-    const [posts, setPosts] = useState([]);     // array of submitted posts
+    const [text, setText] = useState("");       // textarea value 
+
+    function cleanTags (tags) {
+        const cleanedTags = tags.filter((tag) => tag)   // remove empty strings
+        .map((tag) => tag.replace(/[^a-zA-Z0-9#]+/g, ""));  // and remove anything but alphanumeric characters and #
+
+        console.log(cleanedTags);
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault(); // prevent page reload
         if (text.trim() === "") return; 
 
-        setPosts([...posts, text]); 
-        setText(""); // clear textarea
-        console.log(text);
+        const tags = text.split(/\s/g); // storage for tags from user input
+
+        console.log(tags);
+        cleanTags(tags);
     };
 
     return (
