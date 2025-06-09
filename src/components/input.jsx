@@ -7,7 +7,8 @@ function Input ({timeLeft}) {
 
     function cleanTags (tags) {
         const cleanedTags = tags.filter((tag) => tag)   // remove empty strings
-        .map((tag) => tag.replace(/[^a-zA-Z0-9#]+/g, ""));  // and remove anything but alphanumeric characters and #
+        .map((tag) => tag.replace(/[^a-zA-Z0-9]+/g, ""))  // and remove anything but alphanumeric characters 
+        .map((tag) => "#".concat(tag));    // add # in the beginning of every tag
 
         console.log(cleanedTags);
     }
