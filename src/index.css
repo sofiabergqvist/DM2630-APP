@@ -71,6 +71,7 @@ h2 {
 
 .post-button-container button:disabled {
   background: #f3b58a;
+  cursor: default;
 }
 
 /* Card container styling */
