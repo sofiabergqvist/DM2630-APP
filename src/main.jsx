@@ -2,8 +2,6 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import Timer from './components/Timer.jsx'
-import Post from './components/Post.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
