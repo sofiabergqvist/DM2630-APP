@@ -1,26 +1,27 @@
 import '../index.css'
 import { useState } from 'react'
 
-function Input ({timeLeft}) {
+function Input ({timeLeft, setIsPosted, setTags}) {
 
     const [text, setText] = useState("");       // textarea value 
 
-    function cleanTags (tags) {
-        const cleanedTags = tags.filter((tag) => tag)   // remove empty strings
-        .map((tag) => tag.replace(/[^a-zA-Z0-9]+/g, ""))  // and remove anything but alphanumeric characters 
-        .map((tag) => "#".concat(tag));    // add # in the beginning of every tag
-
-        console.log(cleanedTags);
+    function cleanTags (res) {
+        res = res.filter((res) => res)   // remove empty strings
+        .map((res) => res.replace(/[^a-zA-Z0-9]+/g, ""))  // and remove anything but alphanumeric characters 
+        .map((res) => "#".concat(res));    // add # in the beginning of every tag
+        return res;
     }
 
     const handleSubmit = (e) => {
         e.preventDefault(); // prevent page reload
-        if (text.trim() === "") return; 
+        //if (text.trim() === "") return; 
 
-        const tags = text.split(/\s/g); // storage for tags from user input
+        let res = text.split(/\s/g); 
 
-        console.log(tags);
-        cleanTags(tags);
+        res = cleanTags(res);
+        console.log(res);
+        setIsPosted(true);
+        setTags(res);
     };
 
     return (

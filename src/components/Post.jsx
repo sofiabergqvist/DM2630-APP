@@ -3,12 +3,21 @@ import post1 from '../assets/POST 1.png'
 import Timer from './Timer.jsx'
 import Input from './Input.jsx'
 import { useState } from 'react'
+import Tags from './tags.jsx'
 
 function Post () {
 
     const current_post = 1;
 
-    const [timeLeft, setTimeLeft] = useState(60); // start at 60 sec
+    const [timeLeft, setTimeLeft] = useState(10); // start at 60 sec
+    const [isPosted, setIsPosted] = useState(false);
+    const [tags, setTags] = useState([]) // storage for tags from user input
+
+    if(isPosted) {
+        return <Tags
+            tags={tags}
+        />
+    }
     
     return (
         <div className='app-container'>
@@ -28,6 +37,8 @@ function Post () {
                 <div className='input-container'>
                     <Input 
                         timeLeft={timeLeft}
+                        setIsPosted={setIsPosted}
+                        setTags={setTags}
                     />
                 </div>
             </div>
