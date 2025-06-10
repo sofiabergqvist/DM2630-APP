@@ -30,6 +30,17 @@ h2 {
   padding-bottom: 1em;
 }
 
+/* List styling */
+ul {
+  list-style-type: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Result tags styling */
+.result-tags {
+  padding-left: 4em;
+}
+
 /* Button styling */
 .start-button-container {
   display: flex;
