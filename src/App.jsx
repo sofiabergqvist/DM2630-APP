@@ -10,18 +10,23 @@ function App() {
     setIsGameStarted(true);
   }
 
-  if(isGameStarted) {
-    return <Post/>
-  }
-
   return (
-    <div className='app-container'>
-      <h1>Welcome to Alternate Realities</h1>
-      <p className='info-text'>Information about the game goes here.</p> 
-      <div className='start-button-container'>
-        <button onClick={goToGame}>Ready to start?</button>
-      </div>
+    <div>
+        {isGameStarted ? (
+          <Post
+            setIsGameStarted={setIsGameStarted}
+          />
+        ) : (
+          <div className='app-container'>
+            <h1>Welcome to Alternate Realities</h1>
+            <p className='info-text'>Information about the game goes here.</p> 
+            <div className='start-button-container'>
+              <button onClick={goToGame}>Ready to start?</button>
+            </div>
+          </div>
+        )}
     </div>
+    
   )
 }
 
