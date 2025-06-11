@@ -1,11 +1,18 @@
 /* Global reset and styling */
 body {
   margin: 0;
-  padding: 0;
+  padding: 15px;
   font-family: 'Koulen', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: url('./assets/Background.png');
+  background-image: url('./assets/mobile_background.png');
   background-size: cover;
   color: #333;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('./assets/Background.png');
+    background-size: cover;
+  }
 }
 
 /* Container styling for the app */
