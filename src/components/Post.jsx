@@ -14,7 +14,7 @@ function Post ({setIsGameStarted}) {
     const posts = [post1, post2, post3, post4, post5]
 
     const [currentPost, setCurrentPost] = useState(0); 
-    const [timeLeft, setTimeLeft] = useState(10); // start at 60 sec
+    const [timeLeft, setTimeLeft] = useState(60); // start at 60 sec
     const [isPosted, setIsPosted] = useState(false);
     const [tags, setTags] = useState([]) // storage for tags from user input
 
