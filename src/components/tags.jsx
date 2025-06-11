@@ -15,11 +15,19 @@ function Tags({tags, currentPost, resetGame, nextPost}) {
     return(
         <div className='app-container'>
             <h2>Your tags</h2>
-            <div className='result-tags'>
-                <ul>
-                {result}
-                </ul>
-            </div>
+            {
+                tags.length > 0 ? (
+                    <div className='result-tags'>
+                        <ul>
+                        {result}
+                        </ul>
+                    </div>
+                ) : (
+                    <p className='info-text'>
+                        Oops, no tags here...
+                    </p>
+                )
+            }
             <div className='post-button-container'>
                 <button onClick={goToNext}>
                     {currentPost < 4 ? 'Next' : 'Back to start'}
