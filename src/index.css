@@ -80,6 +80,10 @@ ul {
   font-size: 0.75em;
 }
 
+.post-button-container button:hover {
+  background: #FC8834;
+}
+
 .post-button-container button:disabled {
   background: #f3b58a;
   cursor: default;
