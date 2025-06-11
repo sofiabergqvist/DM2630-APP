@@ -14,7 +14,6 @@ function Input ({timeLeft, setIsPosted, setTags}) {
 
     const handleSubmit = (e) => {
         e.preventDefault(); // prevent page reload
-        //if (text.trim() === "") return; 
 
         let res = text.split(/\s/g); 
 
@@ -23,6 +22,7 @@ function Input ({timeLeft, setIsPosted, setTags}) {
         setIsPosted(true);
         setTags(res);
     };
+
 
     return (
         <form onSubmit={handleSubmit}>
