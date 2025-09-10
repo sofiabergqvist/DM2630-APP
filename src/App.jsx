@@ -29,7 +29,7 @@ function App() {
             </p>
             <p className='info-text'>
               Your friend will see the same set of posts, and should also come up with tags to describe them. 
-              You will have 60 seconds to generate as many tags as possible for the post you are currently seeing, 
+              You will have 30 seconds to generate as many tags as possible for the post you are currently seeing, 
               and then you can each post your set of tags.
             </p>
             <p className='info-text'>
