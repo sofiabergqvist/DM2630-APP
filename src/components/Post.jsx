@@ -26,7 +26,7 @@ function Post ({setIsGameStarted}) {
         if(currentPost < 4) {
             setCurrentPost(currentPost+1);
             setIsPosted(false);
-            setTimeLeft(60);
+            setTimeLeft(30);
         }
     }
     
