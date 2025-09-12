@@ -2,7 +2,6 @@ import '../index.css'
 import post1 from '../assets/POST 1.png'
 import post2 from '../assets/POST 2.png'
 import post3 from '../assets/POST 3.png'
-import post4 from '../assets/POST 4.png'
 import post5 from '../assets/POST 5.png'
 import Timer from './Timer.jsx'
 import Input from './Input.jsx'
@@ -11,7 +10,7 @@ import Tags from './tags.jsx'
 
 function Post ({setIsGameStarted}) {
 
-    const posts = [post1, post2, post3, post4, post5]
+    const posts = [post1, post2, post3, post5]
 
     const [currentPost, setCurrentPost] = useState(0); 
     const [timeLeft, setTimeLeft] = useState(30); // start at 30 sec
@@ -23,7 +22,7 @@ function Post ({setIsGameStarted}) {
     }
 
     function nextPost () {
-        if(currentPost < 4) {
+        if(currentPost < 3) {
             setCurrentPost(currentPost+1);
             setIsPosted(false);
             setTimeLeft(30);

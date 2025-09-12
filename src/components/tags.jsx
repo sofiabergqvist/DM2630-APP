@@ -5,7 +5,7 @@ function Tags({tags, currentPost, resetGame, nextPost}) {
     const result = tags.map((tag) => <li>{tag}</li>);
 
     function goToNext() {
-        if(currentPost < 4) {
+        if(currentPost < 3) {
             nextPost();
         } else {
             resetGame();
@@ -30,7 +30,7 @@ function Tags({tags, currentPost, resetGame, nextPost}) {
             }
             <div className='post-button-container'>
                 <button onClick={goToNext}>
-                    {currentPost < 4 ? 'Next' : 'Back to start'}
+                    {currentPost < 3 ? 'Next' : 'Back to start'}
                 </button>
             </div>
         </div>
