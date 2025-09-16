@@ -43,7 +43,7 @@ function Post ({setIsGameStarted}) {
                     <h2>
                         Post {currentPost+1}
                     </h2>
-                    <div className='card-container'>
+                    <div className='post-container'>
                         <img src={posts[currentPost]} alt={'POST 1' + currentPost + 1}/>
                     </div>
                     <div className='timer-and-input'>
